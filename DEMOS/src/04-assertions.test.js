@@ -7,14 +7,14 @@ test('test object', () => {
 });
 
 test('null', () => {
-  const data = null;
+  const data = null; // test null
   expect(data).toBeNull();
   expect(data).toBeDefined();
   expect(data).not.toBeUndefined();
 });
 
 test('booleans', () => {
-  expect(true).toEqual(true);
+  expect(true).toEqual(true); // test booleans
   expect(false).toEqual(false);
 
   expect(0).toBeFalsy();
@@ -23,10 +23,10 @@ test('booleans', () => {
 });
 
 test('string', () => {
-  expect('epic').toMatch(/pic/);
+  expect('epic').toMatch(/pic/); // test match in string with regular expression "/pic/"
 });
 
 test('list / arrays', () => {
-  const numbers = [1, 2, 3, 4, 5];
+  const numbers = [1, 2, 3, 4, 5]; // test match in array
   expect(numbers).toContain(5);
 });
