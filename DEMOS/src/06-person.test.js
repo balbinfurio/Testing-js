@@ -7,8 +7,11 @@ describe('test for Person', () => {
   });
 
   test('should return under', () => {
+    // Arrange (given data)
     person.weight = 45;
+    // Act (do this on a given data)
     const imc = person.calcIMC();
+    // Assert(what we do expect)
     expect(imc).toBe('under');
   });
 
